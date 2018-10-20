@@ -1,0 +1,28 @@
+<div id="sidebar" style="color:black;background-color:peru">
+    <mat-nav-list>
+
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/lamy-home']">
+                {{ 'Home' | translate }}
+        </a>
+        <!--  <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/custom']">
+            {{ 'Customize Lamy' | translate }}
+        </a>
+        -->  
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/paging']">
+             {{ 'Lamy Catalog' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/shade']">
+             {{ 'Twenty Two Shades of Al-star' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/lamy-chart']">
+            {{ 'Lamy Fun Fact' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/lamy-form']">
+            {{ 'Lamy Quiz' | translate }}
+        </a>
+        <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/credit']">
+            {{ 'Credit' | translate }}
+        </a>
+       
+    </mat-nav-list>
+</div>

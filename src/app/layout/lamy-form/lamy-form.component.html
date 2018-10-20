@@ -1,0 +1,33 @@
+<div class="mat-elevation-z8" align='center' style="color:black;background-color:navajowhite">
+  
+<table>
+  <tr *ngFor="let question of questionList">
+      <td>
+        <table>
+            <tr >
+                <td>
+                        {{question.id}} . {{question.desc}}
+                </td>
+          </tr>
+
+          <mat-radio-group [(ngModel)]="question.answered">
+           
+         
+          <tr *ngFor="let option of question.options">
+              <td>
+                  <mat-radio-button class="example-margin" value="{{option.id}}"> {{option.id}} . {{option.desc}}
+                    </mat-radio-button>
+              </td>
+          </tr>
+        </mat-radio-group>
+        </table>
+      </td>
+  </tr>
+</table>
+<button type="button"  (click)="submitForm()">Submit</button>
+<br>
+<br>
+<h3>
+<font style="color:midnightblue">SCORE = {{score}}</font>
+</h3>
+</div>
